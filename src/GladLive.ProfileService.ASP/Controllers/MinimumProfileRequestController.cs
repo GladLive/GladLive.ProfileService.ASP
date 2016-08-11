@@ -13,6 +13,7 @@ namespace GladLive.ProfileService.ASP
 	/// Controller that services <see cref="GetMinimumProfilesRequestPayload"/> requests.
 	/// No authentication is required to service.
 	/// </summary>
+	[PayloadRoute(typeof(GetMinimumProfilesRequestPayload))]
 	public class MinimumProfileRequestController : RequestController<GetMinimumProfilesRequestPayload>
 	{
 		/// <summary>
