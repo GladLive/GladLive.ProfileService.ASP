@@ -9,6 +9,8 @@ using System.Security.Cryptography.X509Certificates;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Server.Kestrel.Https;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.EntityFrameworkCore;
+using GladNet.Serializer.Protobuf;
 
 namespace GladLive.ProfileService.ASP
 {
@@ -33,7 +35,22 @@ namespace GladLive.ProfileService.ASP
 			services.AddLogging();
 
 			//This adds the MVC core features and GladNet features
-			services.AddMvc();
+			services.AddGladNet(new ProtobufnetSerializerStrategy(), new ProtobufnetDeserializerStrategy(), new ProtobufnetRegistry());
+
+			//Register DB services
+			services.AddEntityFrameworkSqlServer()
+				.AddDbContext<ProfileDbContext>(option =>
+				{
+					option.UseInMemoryDatabase(); //for test and dev we should use in-memory
+
+					//option.UseSqlServer(@"Server=Glader-PC;Database=ASPTEST;Trusted_Connection=True;");
+					//option.UseMemoryCache(new MemoryCache(new MemoryCacheOptions()));
+				});
+
+			
+
+			services.AddScoped<IProfileRepositoryAsync, ProfileRepository>();
+			services.AddTransient<ProfileDbContext>();
 		}
 
 		public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
@@ -68,6 +85,7 @@ namespace GladLive.ProfileService.ASP
 			//We have to register the payload types
 			//We could maybe do some static analysis to find referenced payloads and auto generate this code
 			//or find them at runtime but for now this is ok
+			new ProtobufnetRegistry().RegisterCommonGladLivePayload();
 		}
 
 		//This changed in RTM. Fluently build and setup the web hosting

@@ -63,6 +63,15 @@
           "lib/net35/Easyception.dll": {}
         }
       },
+      "fasterflect/2.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Fasterflect.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Fasterflect.dll": {}
+        }
+      },
       "GladLive.Payload.Common/1.0.2": {
         "type": "package",
         "dependencies": {
@@ -190,6 +199,21 @@
         },
         "runtime": {
           "lib/net35/GladNet.Serializer.dll": {}
+        }
+      },
+      "GladNet.Serializer.Protobuf/1.0.11": {
+        "type": "package",
+        "dependencies": {
+          "Easyception": "2.0.0",
+          "GladNet.Serializer": "1.0.0",
+          "fasterflect": "2.1.3",
+          "protobuf-net": "2.0.0.668"
+        },
+        "compile": {
+          "lib/net35/GladNet.Serializer.Protobuf.dll": {}
+        },
+        "runtime": {
+          "lib/net35/GladNet.Serializer.Protobuf.dll": {}
         }
       },
       "Libuv/1.9.0": {
@@ -1585,6 +1609,15 @@
         },
         "runtime": {
           "lib/net451/OpenIddict.EntityFramework.dll": {}
+        }
+      },
+      "protobuf-net/2.0.0.668": {
+        "type": "package",
+        "compile": {
+          "lib/net40/protobuf-net.dll": {}
+        },
+        "runtime": {
+          "lib/net40/protobuf-net.dll": {}
         }
       },
       "Remotion.Linq/2.1.1": {
@@ -2181,6 +2214,15 @@
           "lib/net35/Easyception.dll": {}
         }
       },
+      "fasterflect/2.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Fasterflect.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Fasterflect.dll": {}
+        }
+      },
       "GladLive.Payload.Common/1.0.2": {
         "type": "package",
         "dependencies": {
@@ -2308,6 +2350,21 @@
         },
         "runtime": {
           "lib/net35/GladNet.Serializer.dll": {}
+        }
+      },
+      "GladNet.Serializer.Protobuf/1.0.11": {
+        "type": "package",
+        "dependencies": {
+          "Easyception": "2.0.0",
+          "GladNet.Serializer": "1.0.0",
+          "fasterflect": "2.1.3",
+          "protobuf-net": "2.0.0.668"
+        },
+        "compile": {
+          "lib/net35/GladNet.Serializer.Protobuf.dll": {}
+        },
+        "runtime": {
+          "lib/net35/GladNet.Serializer.Protobuf.dll": {}
         }
       },
       "Libuv/1.9.0": {
@@ -3703,6 +3760,15 @@
         },
         "runtime": {
           "lib/net451/OpenIddict.EntityFramework.dll": {}
+        }
+      },
+      "protobuf-net/2.0.0.668": {
+        "type": "package",
+        "compile": {
+          "lib/net40/protobuf-net.dll": {}
+        },
+        "runtime": {
+          "lib/net40/protobuf-net.dll": {}
         }
       },
       "Remotion.Linq/2.1.1": {
@@ -4302,6 +4368,19 @@
         "lib/net35/Easyception.dll"
       ]
     },
+    "fasterflect/2.1.3": {
+      "sha512": "DCYneTQ/fY3HieKSJdcA/Z9hCg/5maAZpoqySqO4+XC3BgUasHOrTZY4BEf76WZPZwIU5SNUhrPuxKSHyyg+mg==",
+      "type": "package",
+      "path": "fasterflect/2.1.3",
+      "files": [
+        "fasterflect.2.1.3.nupkg.sha512",
+        "fasterflect.nuspec",
+        "lib/net35/Fasterflect.XML",
+        "lib/net35/Fasterflect.dll",
+        "lib/net40/Fasterflect.XML",
+        "lib/net40/Fasterflect.dll"
+      ]
+    },
     "GladLive.Payload.Common/1.0.2": {
       "sha512": "8RZnO3TO4yS/pyuPFDWB8+3p6rS9dMH2e0h/7YusbQhpyaAHOY7KN7rLVrnqkdtpb+jdtVNUahLTorpvHfXM8A==",
       "type": "package",
@@ -4423,6 +4502,16 @@
         "GladNet.Serializer.nuspec",
         "lib/net35/GladNet.Serializer.XML",
         "lib/net35/GladNet.Serializer.dll"
+      ]
+    },
+    "GladNet.Serializer.Protobuf/1.0.11": {
+      "sha512": "IFA1vOC3DqJQX/Y4jMsUNxYveVeq0RNwhrEi9ty9cWaw5BqxxEmArRJGZeif9eELJNbfSuaVv+/aemyKosypgw==",
+      "type": "package",
+      "path": "GladNet.Serializer.Protobuf/1.0.11",
+      "files": [
+        "GladNet.Serializer.Protobuf.1.0.11.nupkg.sha512",
+        "GladNet.Serializer.Protobuf.nuspec",
+        "lib/net35/GladNet.Serializer.Protobuf.dll"
       ]
     },
     "Libuv/1.9.0": {
@@ -5685,6 +5774,55 @@
         "lib/net451/OpenIddict.EntityFramework.xml",
         "lib/netstandard1.4/OpenIddict.EntityFramework.dll",
         "lib/netstandard1.4/OpenIddict.EntityFramework.xml"
+      ]
+    },
+    "protobuf-net/2.0.0.668": {
+      "sha512": "Lgj+Kf1+RV0utKxX9u1WEcymPGrbWrj/AwFmFADFLLa/LLdc1ji2MIGcecFRAGUu6UO8BRbdjZAIYWvLlN1B/A==",
+      "type": "package",
+      "path": "protobuf-net/2.0.0.668",
+      "files": [
+        "lib/net20-cf/protobuf-net.dll",
+        "lib/net20-cf/protobuf-net.pdb",
+        "lib/net20-cf/protobuf-net.xml",
+        "lib/net20/protobuf-net.dll",
+        "lib/net20/protobuf-net.pdb",
+        "lib/net20/protobuf-net.xml",
+        "lib/net30/protobuf-net.dll",
+        "lib/net30/protobuf-net.pdb",
+        "lib/net30/protobuf-net.xml",
+        "lib/net35-cf/protobuf-net.dll",
+        "lib/net35-cf/protobuf-net.pdb",
+        "lib/net35-cf/protobuf-net.xml",
+        "lib/net35/protobuf-net.dll",
+        "lib/net35/protobuf-net.pdb",
+        "lib/net35/protobuf-net.xml",
+        "lib/net40-cf/protobuf-net.dll",
+        "lib/net40-cf/protobuf-net.pdb",
+        "lib/net40-cf/protobuf-net.xml",
+        "lib/net40/protobuf-net.dll",
+        "lib/net40/protobuf-net.pdb",
+        "lib/net40/protobuf-net.xml",
+        "lib/netcore45/protobuf-net.XML",
+        "lib/netcore45/protobuf-net.dll",
+        "lib/netcore45/protobuf-net.pdb",
+        "lib/netcore45/protobuf-net.pri",
+        "lib/portable-sl4+net40+wp7+windows8/protobuf-net.dll",
+        "lib/portable-sl4+net40+wp7+windows8/protobuf-net.pdb",
+        "lib/portable-sl4+net40+wp7+windows8/protobuf-net.xml",
+        "lib/sl3-wp/protobuf-net.dll",
+        "lib/sl3-wp/protobuf-net.pdb",
+        "lib/sl3-wp/protobuf-net.xml",
+        "lib/sl4-windowsphone71/protobuf-net.dll",
+        "lib/sl4-windowsphone71/protobuf-net.pdb",
+        "lib/sl4-windowsphone71/protobuf-net.xml",
+        "lib/sl4/protobuf-net.dll",
+        "lib/sl4/protobuf-net.pdb",
+        "lib/sl4/protobuf-net.xml",
+        "lib/windowsphone8/protobuf-net.dll",
+        "lib/windowsphone8/protobuf-net.pdb",
+        "lib/windowsphone8/protobuf-net.xml",
+        "protobuf-net.2.0.0.668.nupkg.sha512",
+        "protobuf-net.nuspec"
       ]
     },
     "Remotion.Linq/2.1.1": {
@@ -8251,6 +8389,7 @@
       "GladLive.Payload.Profile >= 1.0.2",
       "GladLive.Security.Common >= 1.0.15",
       "GladNet.ASP.Server >= 1.0.17",
+      "GladNet.Serializer.Protobuf >= 1.0.11",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics >= 1.0.0",
       "Microsoft.AspNetCore.Mvc >= 1.0.0",
