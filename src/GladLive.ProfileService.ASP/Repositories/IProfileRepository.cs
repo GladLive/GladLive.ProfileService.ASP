@@ -31,5 +31,13 @@ namespace GladLive.ProfileService.ASP
 		/// <param name="userName">User name of the profile.</param>
 		/// <returns>A future of the profile with the matching <paramref name="userName"/> or null.</returns>
 		Task<GladLiveProfileModel> GetByProfileNameAsync(string userName);
+
+		/// <summary>
+		/// Asyncronously queries for the profiles by the <see cref="string"/>
+		/// name of the profile.
+		/// </summary>
+		/// <param name="userNames">User names of the profiles.</param>
+		/// <returns>A future of the profiles with the matching <paramref name="userNames"/> or null.</returns>
+		Task<IEnumerable<GladLiveProfileModel>> GetByProfilesNameAsync(IEnumerable<string> userNames);
 	}
 }

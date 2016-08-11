@@ -111,7 +111,7 @@
           "lib/net451/GladLive.Security.Common.dll": {}
         }
       },
-      "GladNet.ASP.Formatters/1.0.17": {
+      "GladNet.ASP.Formatters/1.0.18": {
         "type": "package",
         "dependencies": {
           "GladNet.Message": "2.0.32",
@@ -125,10 +125,10 @@
           "lib/net451/GladNet.ASP.Formatters.dll": {}
         }
       },
-      "GladNet.ASP.Server/1.0.17": {
+      "GladNet.ASP.Server/1.0.18": {
         "type": "package",
         "dependencies": {
-          "GladNet.ASP.Formatters": "1.0.17",
+          "GladNet.ASP.Formatters": "1.0.18",
           "GladNet.Message": "2.0.32",
           "Microsoft.AspNetCore.Mvc": "1.0.0"
         },
@@ -2262,7 +2262,7 @@
           "lib/net452/GladLive.Security.Common.dll": {}
         }
       },
-      "GladNet.ASP.Formatters/1.0.17": {
+      "GladNet.ASP.Formatters/1.0.18": {
         "type": "package",
         "dependencies": {
           "GladNet.Message": "2.0.32",
@@ -2276,10 +2276,10 @@
           "lib/net452/GladNet.ASP.Formatters.dll": {}
         }
       },
-      "GladNet.ASP.Server/1.0.17": {
+      "GladNet.ASP.Server/1.0.18": {
         "type": "package",
         "dependencies": {
-          "GladNet.ASP.Formatters": "1.0.17",
+          "GladNet.ASP.Formatters": "1.0.18",
           "GladNet.Message": "2.0.32",
           "Microsoft.AspNetCore.Mvc": "1.0.0"
         },
@@ -4427,23 +4427,23 @@
         "lib/netstandard1.6/GladLive.Security.Common.dll"
       ]
     },
-    "GladNet.ASP.Formatters/1.0.17": {
-      "sha512": "Yav/QSNBey/xWr3V3XYYBLcmh47a2gtjiLkDg2tfvgdy8VNac48hSw+CW87N8Pd+7Qq7T/52j7KToCrtiCnDcA==",
+    "GladNet.ASP.Formatters/1.0.18": {
+      "sha512": "6WlC6AX0uaRkcCm/8RkEG8EifK3Vvnr90hvmaDzXK+FJ0UhqPLQZrdUf1AKWd8fz1QtOPiBnoiI87hT1mWpVzw==",
       "type": "package",
-      "path": "GladNet.ASP.Formatters/1.0.17",
+      "path": "GladNet.ASP.Formatters/1.0.18",
       "files": [
-        "GladNet.ASP.Formatters.1.0.17.nupkg.sha512",
+        "GladNet.ASP.Formatters.1.0.18.nupkg.sha512",
         "GladNet.ASP.Formatters.nuspec",
         "lib/net451/GladNet.ASP.Formatters.dll",
         "lib/net452/GladNet.ASP.Formatters.dll"
       ]
     },
-    "GladNet.ASP.Server/1.0.17": {
-      "sha512": "8SD+rnezgWUxfksuoJLdZBqZwRhfRZdVK10gywNCe7MrhtzdCVb9yW8Gev/d4EBG1CUi5hZp7IAikSwRIUcm1A==",
+    "GladNet.ASP.Server/1.0.18": {
+      "sha512": "x2fi4VRxjYt7tcbZVGKb7RzGyj3qFqeRCOB52oZftO3B3brvsE7aunEIXyiKCdNy8Cy/NNmneV2N+AWRPWVFYg==",
       "type": "package",
-      "path": "GladNet.ASP.Server/1.0.17",
+      "path": "GladNet.ASP.Server/1.0.18",
       "files": [
-        "GladNet.ASP.Server.1.0.17.nupkg.sha512",
+        "GladNet.ASP.Server.1.0.18.nupkg.sha512",
         "GladNet.ASP.Server.nuspec",
         "lib/net451/GladNet.ASP.Server.dll",
         "lib/net452/GladNet.ASP.Server.dll"
@@ -8388,7 +8388,7 @@
       "GladLive.Payload.Common >= 1.0.2",
       "GladLive.Payload.Profile >= 1.0.2",
       "GladLive.Security.Common >= 1.0.15",
-      "GladNet.ASP.Server >= 1.0.17",
+      "GladNet.ASP.Server >= 1.0.18",
       "GladNet.Serializer.Protobuf >= 1.0.11",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics >= 1.0.0",

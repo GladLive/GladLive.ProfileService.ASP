@@ -109,5 +109,18 @@ namespace GladLive.ProfileService.ASP
 				.Where(a => a.UserName == userName)
 				.FirstOrDefault();
 		}
+
+		/// <summary>
+		/// Asyncronously queries for the profiles by the <see cref="string"/>
+		/// name of the profile.
+		/// </summary>
+		/// <param name="userNames">User names of the profiles.</param>
+		/// <returns>A future of the profiles with the matching <paramref name="userNames"/> or null.</returns>
+		public async Task<IEnumerable<GladLiveProfileModel>> GetByProfilesNameAsync(IEnumerable<string> userNames)
+		{
+			return await databaseContext.Profiles.ToAsyncEnumerable()
+				.Where(p => userNames.Contains(p.UserName))
+				.ToList();
+		}
 	}
 }

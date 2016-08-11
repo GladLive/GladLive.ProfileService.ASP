@@ -22,7 +22,7 @@
 		"Microsoft.Extensions.Configuration.Json": "1.0.0",
 		"Microsoft.AspNetCore.Server.Kestrel.Https": "1.0.0",
 		"GladLive.Security.Common": "1.0.15",
-		"GladNet.ASP.Server": "1.0.17",
+		"GladNet.ASP.Server": "1.0.18",
 		"GladLive.Payload.Common": "1.0.2",
 		"GladLive.Payload.Profile": "1.0.2",
 		"GladNet.Serializer.Protobuf": "1.0.11" 
