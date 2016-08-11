@@ -27,11 +27,9 @@ To use this project you'll first need a couple of things:
 
 ## How To Use
 
-Start the application and connect to the {baseurl}/api/AuthenticationRequest endpoint to be issued a JWT authorization response. To authenticate you must send username, password and grant_type password in the request body of a POST with a url encoded content type.
+Requests are serviced either by JSON in web or with GladNet2 API using protobuf. Controllers share functionality for servicing both web and game requests.
 
-For example: username=TestUsername&password=Test123&grant_type=password
-
-The server will issue a JWT token in the response body or error information.
+Requests that require authentication should contain the GladLive JWT in the Authorization header.
 
 ## Builds
 
