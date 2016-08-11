@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using JetBrains.Annotations;
 
-namespace GladLive.ProfileService.ASP.Database
+namespace GladLive.ProfileService.ASP
 {
 	/// <summary>
 	/// <see cref="DbContext"/> for the <see cref="GladLiveProfileModel"/>.
@@ -15,7 +15,7 @@ namespace GladLive.ProfileService.ASP.Database
 		/// <summary>
 		/// Queryable object that contains the set of profiles.
 		/// </summary>
-		DbSet<GladLiveProfileModel> Profiles { get; set; }
+		public DbSet<GladLiveProfileModel> Profiles { get; set; }
 
 		public ProfileDbContext(DbContextOptions options) 
 			: base(options)
