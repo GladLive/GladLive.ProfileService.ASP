@@ -1,16 +1,19 @@
-# GladLive.AuthService.ASP
+# GladLive.ProfileService.ASP
 
 GladLive is network session service comparable to Xboxlive or Steam. 
 
-GladLive.AuthService.ASP is a web scalable ASP core authentication webservice/web-api for the GladLive distributed network and preforms this role by providing:
-  - Services Authentication requests for the GladLive distributed network
-  - Vertically and horizontally scalable
-  - Issues JWT tokens to authenticated users
+GladLive.ProfileService.ASP provides a web scalable profile webservice/web-api for the GladLive distributed network and preforms the role by providing:
+  - Hello Implementation
+  - Services Profile Queries
+  - Implemented GladLive.Payload.Profile RequestControllers
+  - Equipped to handle JWT authorization for elevated requests
   - Web and cloud ready
 
 ## GladLive Services
 
-GladLive.ProxyLoadBalancer: https://github.com/GladLive/GladLive.ProxyLoadBalancer
+GladLive.PatchingService.ASP: https://github.com/GladLive/GladLive.PatchingService.ASP
+
+GladLive.ProfileService.ASP: https://github.com/GladLive/GladLive.ProfileService.ASP
 
 GladLive.AuthService.ASP: https://github.com/GladLive/GladLive.AuthService.ASP
 
@@ -39,8 +42,8 @@ The server will issue a JWT token in the response body or error information.
 #### Linux/Mono - Unit Tests
 ||Debug x86|Debug x64|Release x86|Release x64|
 |:--:|:--:|:--:|:--:|:--:|:--:|
-|**master**| N/A | N/A | N/A | [![Build Status](https://travis-ci.org/GladLive/GladLive.AuthService.ASP.svg?branch=master)](https://travis-ci.org/GladLive/GladLive.AuthService.ASP) |
-|**dev**| N/A | N/A | N/A | [![Build Status](https://travis-ci.org/GladLive/GladLive.AuthService.ASP.svg?branch=dev)](https://travis-ci.org/GladLive/GladLive.AuthService.ASP)|
+|**master**| N/A | N/A | N/A | [![Build Status](https://travis-ci.org/GladLive/GladLive.ProfileService.ASP.svg?branch=master)](https://travis-ci.org/GladLive/GladLive.ProfileService.ASP) |
+|**dev**| N/A | N/A | N/A | [![Build Status](https://travis-ci.org/GladLive/GladLive.ProfileService.ASP.svg?branch=dev)](https://travis-ci.org/GladLive/GladLive.ProfileService.ASP)|
 
 #### Windows - Unit Tests
 
