@@ -1,4 +1,4 @@
-﻿{
+{
 	"buildOptions": {
 		"emitEntryPoint": true,
 					"copyToOutput": { "includeFiles": [ "Certs/certificate.pfx", "Certs/TestCert.pfx", "appsettings.json" ] },
@@ -21,7 +21,10 @@
 		"Microsoft.Extensions.Configuration.FileExtensions": "1.0.0",
 		"Microsoft.Extensions.Configuration.Json": "1.0.0",
 		"Microsoft.AspNetCore.Server.Kestrel.Https": "1.0.0",
-		"GladLive.Security.Common": "1.0.15"
+		"GladLive.Security.Common": "1.0.15",
+		"GladNet.ASP.Server": "1.0.17",
+		"GladLive.Payload.Common": "1.0.2",
+		"GladLive.Payload.Profile": "1.0.2"
 	},
 
 	"commands": {
